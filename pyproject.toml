@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitsense"
+version = "0.1.0"
+description = "Auto commit message generator using local Ollama and Typer"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "GitSense Maintainers" }
+]
+dependencies = [
+  "typer>=0.12.3",
+  "requests>=2.32.3"
+]
+keywords = ["git", "cli", "ollama", "commit", "typer"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Version Control :: Git",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/gitsense"
+Repository = "https://github.com/your-username/gitsense"
+
+[project.scripts]
+gitsense = "cli:app"
+
+[tool.setuptools]
+py-modules = ["cli"]

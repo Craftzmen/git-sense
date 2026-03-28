@@ -1,0 +1,9 @@
+README.md
+cli.py
+pyproject.toml
+gitsense.egg-info/PKG-INFO
+gitsense.egg-info/SOURCES.txt
+gitsense.egg-info/dependency_links.txt
+gitsense.egg-info/entry_points.txt
+gitsense.egg-info/requires.txt
+gitsense.egg-info/top_level.txt

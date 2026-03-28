@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: gitsense
+Version: 0.1.0
+Summary: Auto commit message generator using local Ollama and Typer
+Author: GitSense Maintainers
+Project-URL: Homepage, https://github.com/your-username/gitsense
+Project-URL: Repository, https://github.com/your-username/gitsense
+Keywords: git,cli,ollama,commit,typer
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Version Control :: Git
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.12.3
+Requires-Dist: requests>=2.32.3
+
+# GitSense
+
+GitSense is a small Python CLI that generates a conventional commit message from your current git diff using a local Ollama model, then lets you confirm or edit the message before committing and pushing your current branch.
+
+## Install
+
+```bash
+python3 -m pip install .
+```
+
+For development mode:
+
+```bash
+python3 -m pip install -e .
+```
+
+## Usage
+
+```bash
+gitsense
+```
+
+Optional staged mode:
+
+```bash
+gitsense commit --staged
+```
+
+## Requirements
+
+- Git repository
+- Ollama running locally at `http://localhost:11434`
+- `llama3` model available in Ollama
